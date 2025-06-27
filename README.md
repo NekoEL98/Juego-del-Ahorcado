@@ -59,4 +59,4 @@ Estas estadísticas pueden consultarse desde el menú principal seleccionando la
 ## ✅ Requisitos para ejecución
 
 - Tener instalado Python 3
-- Ejecutar el archivo `ahorcado.py` desde un IDE o consola
+- Ejecutar el archivo `Juego del Ahorcado.py` desde un IDE o consola

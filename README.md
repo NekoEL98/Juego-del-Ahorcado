@@ -73,9 +73,3 @@ Estas estadísticas pueden consultarse desde el menú principal seleccionando la
 
 - Tener instalado Python 3
 - Ejecutar el archivo `ahorcado.py` desde un IDE o consola
-
----
-
-## ✨ Captura de pantalla (opcional)
-
-> Puedes añadir una captura del juego en ejecución para hacerlo más visual si gustas.

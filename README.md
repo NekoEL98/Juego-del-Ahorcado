@@ -56,19 +56,6 @@ Estas estadísticas pueden consultarse desde el menú principal seleccionando la
 
 ---
 
-## 📁 Estructura del repositorio
-
-```
-/ahorcado
-│
-├── ahorcado.py          # Código principal del juego
-├── palabras.txt         # Lista de palabras predefinidas (opcional)
-├── estadisticas.txt     # Archivo donde se almacenan las estadísticas
-└── README.md            # Este archivo
-```
-
----
-
 ## ✅ Requisitos para ejecución
 
 - Tener instalado Python 3

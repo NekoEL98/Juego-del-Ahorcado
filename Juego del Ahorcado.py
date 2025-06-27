@@ -10,6 +10,9 @@ import random
 # Lista de palabras posibles para jugar. Se puede ir agregando más palabras si se desea.
 palabras = ["zanahoria", "conejo", "gato", "alice", "perrito", "cookie", "perlita", "bts", "army"]
 
+#Variable global para guardar estadísticas
+ultima_estadistica = None
+
 # Función que elige una palabra aleatoria de la lista
 def elegir_palabra():
     return random.choice(palabras).lower()  # Devuelve una palabra en minúsculas
@@ -56,23 +59,47 @@ def jugar_ahorcado():
     # Evaluamos si el jugador ganó o perdió
     if "_" not in mostrar:
         print(f"\n ¡Felicidades ganaste! Adivinaste la palabra: {palabra}")
+        resultado = "Ganó"
     else:
         print(f"\n Te quedaste sin intentos¡Perdiste¡. La palabra era: {palabra}")
-        
+        resultado = "Perdió"
+
+    global ultima_estadistica
+    ultima_estadistica = {
+        "modo": "Solo jugador",
+        "palabra": palabra,
+        "resultado": resultado,
+        "intentos_restantes": intentos
+    }
+
+#Función para mostrar estadística de la última partida
+def ver_estadisticas():
+    global ultima_estadistica
+    if ultima_estadistica:
+        print("\n Estadísticas de la última partida:")
+        for clave, valor in ultima_estadistica.items():
+            print(f"{clave.capitalize()}: {valor}")
+    else:
+        print("\nNo hay estadisticas aún. Juega una partida primero")
+
 # Función que muestra el menú principal del juego
 def menu():
     while True:
         print("\n--- MENÚ DEL AHORCADO ---")
         print("1. Jugar")
-        print("2. Salir")
-        opcion = input("Selecciona una opción (1 o 2): ")
+        print("2. Ver estadísticas de la última partida")
+        print("3. Salir")
+        opcion = input("Selecciona una opción (1 o 2 o 3): ")
 
         # Si se elige jugar, iniciamos el juego
         if opcion == "1":
             jugar_ahorcado()
+        #Si elige ver estadisticas de la última partida, mostramos estadisticas última partida
+        elif opcion =="2":
+            ver_estadisticas()
         # Si elige salir, mostramos un mensaje de despedida
-        elif opcion == "2":
-            print("¡Gracias por jugar, Eli! 🐰🎀")
+        elif opcion == "3":
+            print("¡Gracias por jugar, Eli!")
             break
         else:
             print("Opción inválida. Intenta de nuevo.")

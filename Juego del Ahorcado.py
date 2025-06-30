@@ -89,7 +89,8 @@ def menu():
         print("1. Jugar")
         print("2. Ver estadísticas de la última partida")
         print("3. Salir")
-        opcion = input("Selecciona una opción (1 o 2 o 3): ")
+        print("4. Volver a jugar")
+        opcion = input("Selecciona una opción (1 o 2 o 3 o 4): ")
 
         # Si se elige jugar, iniciamos el juego
         if opcion == "1":
@@ -100,6 +101,8 @@ def menu():
         # Si elige salir, mostramos un mensaje de despedida
         elif opcion == "3":
             print("¡Gracias por jugar, Eli!")
+        elif opcion == "4":
+            juegar_ahorcado()
             break
         else:
             print("Opción inválida. Intenta de nuevo.")

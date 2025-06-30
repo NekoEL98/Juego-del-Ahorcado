@@ -102,7 +102,7 @@ def menu():
         elif opcion == "3":
             print("¡Gracias por jugar, Eli!")
         elif opcion == "4":
-            juegar_ahorcado()
+            jugar_ahorcado()
             break
         else:
             print("Opción inválida. Intenta de nuevo.")

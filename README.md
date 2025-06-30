@@ -60,3 +60,16 @@ Estas estadísticas pueden consultarse desde el menú principal seleccionando la
 
 - Tener instalado Python 3
 - Ejecutar el archivo `Juego del Ahorcado.py` desde un IDE o consola
+
+---
+
+## Conclusiones
+
+1. **Fortalecimiento de la lógica de programación**  
+   Desarrollar el juego del ahorcado permitió reforzar conceptos clave como estructuras de decisión, bucles, listas y diccionarios en Python, consolidando la capacidad de resolver problemas paso a paso.
+
+2. **Importancia de la validación de entradas**  
+   La implementación de verificaciones para letras repetidas, intentos y palabras completas demuestra la relevancia de validar correctamente la información que ingresa el usuario, evitando errores y mejorando la experiencia de juego.
+
+3. **Visualización clara de resultados**  
+   Integrar un sistema de estadísticas al finalizar la partida brinda al jugador retroalimentación inmediata y fomenta la comprensión de los resultados, lo cual enriquece tanto el aprendizaje como la diversión.
